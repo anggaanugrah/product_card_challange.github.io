@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+body {
+  padding: 100px;
+  background-color: hsl(30deg, 38%, 92%);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+body .card {
+  width: 600px;
+  height: 450px;
+  display: flex;
+  position: relative;
+  border-radius: 15px;
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.01);
+  margin: 15px;
+}
+body .card .col {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+body .card .col img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 0 0 15px;
+}
+body .card .col .card-body {
+  margin: 30px;
+}
+body .card .col .card-body .card-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(228deg, 12%, 48%);
+}
+body .card .col .card-body .card-title {
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 21%, 14%);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+}
+body .card .col .card-body .card-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: hsl(228deg, 12%, 48%);
+  line-height: 1.7;
+}
+body .card .col .card-body .row-price {
+  display: flex;
+  margin: 20px 0 20px 0;
+  align-items: center;
+}
+body .card .col .card-body .row-price .card-price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 32px;
+  margin-right: 20px;
+  color: hsl(158deg, 36%, 37%);
+}
+body .card .col .card-body .row-price .card-price-muted {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: hsl(228deg, 12%, 48%);
+  text-decoration: line-through;
+}
+body .card .col .card-body .cart-button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  width: auto;
+  height: 40px;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(158deg, 36%, 37%);
+  padding: 3px 6px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .card .col .card-body .cart-button:hover {
+  background-color: hsl(159deg, 37%, 23%);
+}
+body .card .col .card-body .fa-cart {
+  background: url(../images/icon-cart.svg) no-repeat;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+body .attribution {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+body .attribution a {
+  text-decoration: none;
+}
+
+@media (max-width: 375px) {
+  body {
+    padding: 50px;
+    background-color: hsl(30deg, 38%, 92%);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  body .card {
+    width: 300px;
+    height: 550px;
+    display: block;
+    position: relative;
+    border-radius: 15px;
+    background-color: hsl(0deg, 0%, 100%);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.01);
+    margin: 15px;
+  }
+  body .card .col-sm {
+    width: 100%;
+    height: 40%;
+    display: flex;
+  }
+  body .card .col-sm img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  body .card .col-sm-content {
+    width: 100%;
+    height: 60%;
+    display: flex;
+  }
+  body .card .col-sm-content .card-body {
+    margin: 15px;
+  }
+  body .card .col-sm-content .card-body .card-label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: hsl(228deg, 12%, 48%);
+  }
+  body .card .col-sm-content .card-body .card-title {
+    font-family: "Fraunces", serif;
+    color: hsl(212deg, 21%, 14%);
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1;
+  }
+  body .card .col-sm-content .card-body .card-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: hsl(228deg, 12%, 48%);
+    line-height: 1.7;
+  }
+  body .card .col-sm-content .card-body .row-price {
+    display: flex;
+    margin: 20px 0 20px 0;
+    align-items: center;
+  }
+  body .attribution {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+  }
+}/*# sourceMappingURL=main.css.map */
